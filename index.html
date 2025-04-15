@@ -10,21 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleLanguage(lang) {
+      const esElements = document.querySelectorAll('.lang-es');
+      const enElements = document.querySelectorAll('.lang-en');
+      if (lang === 'es') {
+        esElements.forEach(el => el.style.display = 'block');
+        enElements.forEach(el => el.style.display = 'none');
+      } else {
+        esElements.forEach(el => el.style.display = 'none');
+        enElements.forEach(el => el.style.display = 'block');
+      }
+    }
+    window.onload = () => toggleLanguage('es');
+  </script>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Dieselpack Argentina" class="logo">
     <nav>
       <ul>
-        <li><a href="#quienes-somos">Quiénes Somos</a> / <a href="#about-us">About Us</a></li>
-        <li><a href="#marcas">Marcas</a> / <a href="#brands">Brands</a></li>
-        <li><a href="#contacto">Contacto</a> / <a href="#contact">Contact</a></li>
+        <li class="lang-es"><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li class="lang-en"><a href="#about-us">About Us</a></li>
+        <li class="lang-es"><a href="#marcas">Marcas</a></li>
+        <li class="lang-en"><a href="#brands">Brands</a></li>
+        <li class="lang-es"><a href="#contacto">Contacto</a></li>
+        <li class="lang-en"><a href="#contact">Contact</a></li>
+        <li><button onclick="toggleLanguage('es')">ES</button> / <button onclick="toggleLanguage('en')">EN</button></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="lang-es">
       <h2>Quiénes Somos</h2>
       <p>
         Somos Dieselpack Argentina, una compañía dedicada a la importación, exportación y venta de repuestos y equipamiento de inyección Diesel.<br><br>
@@ -33,7 +51,7 @@
       </p>
     </section>
 
-    <section id="about-us">
+    <section id="about-us" class="lang-en">
       <h2>About Us</h2>
       <p>
         We are Dieselpack Argentina, a company dedicated to the import, export, and sale of diesel injection equipment and spare parts.<br><br>
@@ -42,7 +60,7 @@
       </p>
     </section>
 
-    <section id="marcas">
+    <section id="marcas" class="lang-es">
       <h2>Marcas con las que trabajamos</h2>
       <div class="marcas">
         <div><img src="bosch.png" alt="Bosch"><p>Bosch - Repuestos y herramientas para sistemas Common Rail.</p></div>
@@ -54,7 +72,7 @@
       </div>
     </section>
 
-    <section id="brands">
+    <section id="brands" class="lang-en">
       <h2>Brands We Work With</h2>
       <div class="marcas">
         <div><img src="bosch.png" alt="Bosch"><p>Bosch - Spare parts and tools for Common Rail systems.</p></div>
@@ -66,7 +84,7 @@
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="lang-es">
       <h2>Contacto</h2>
       <p><strong>Nombre:</strong> Gustavo Galbusera</p>
       <p><i class="fas fa-phone"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
@@ -75,7 +93,7 @@
       <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a> (opcional)</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="lang-en">
       <h2>Contact</h2>
       <p><strong>Name:</strong> Gustavo Galbusera</p>
       <p><i class="fas fa-phone"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
