@@ -1,50 +1,119 @@
+/* ===== Estilos Generales ===== */
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background: #f4f4f4;
-  color: #2d2d2d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-.container {
-  text-align: center;
-  padding: 40px;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid #83c247;
+header {
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .logo {
-  max-width: 300px;
-  margin-bottom: 30px;
+  height: 60px;
 }
 
-h1 {
-  color: #83c247;
-  font-size: 2.5em;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff2e2e;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #c00;
+  border-bottom: 2px solid #c00;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.marcas div {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.marcas img {
+  max-width: 100px;
+  height: auto;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.1em;
-  color: #555;
-}
-
-a {
-  display: inline-block;
-  margin-top: 20px;
-  color: white;
+#contacto a {
+  color: #c00;
   text-decoration: none;
-  background: #83c247;
-  padding: 10px 24px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
 }
 
-a:hover {
-  background: #6ba837;
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-logos img {
+  height: 30px;
+  width: auto;
+  opacity: 0.7;
+}
+
+.marca-agua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+}
+
+.marca-agua img {
+  height: 20px;
+  width: 20px;
+  opacity: 0.6;
 }
