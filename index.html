@@ -103,10 +103,22 @@
     <div class="divisor"><img src="esquema2.png" alt="División 2"></div>
 
    <!-- Sección Contacto -->
-  <section id="contacto">
-    <div class="lang-es">
-      <h2>Contacto</h2>
-      <div class="formulario">
+<section id="contacto" class="contacto-dos-columnas">
+  <!-- Español -->
+  <div class="lang-es">
+    <h2>Contacto</h2>
+    <div class="contacto-wrapper">
+      <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>Gustavo A Galbusera</p>
+        <p>📧 <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
+        <p>📱 <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+        <p>📘 <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
+        <p>📸 <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+      </div>
+      <div class="contact-form">
+        <h3>Formulario de contacto</h3>
         <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
           <input type="text" name="nombre" placeholder="Nombre" required>
           <input type="email" name="email" placeholder="Correo electrónico" required>
@@ -114,29 +126,55 @@
           <textarea name="mensaje" placeholder="Consulta" rows="5" required></textarea>
           <button type="submit">Enviar consulta</button>
         </form>
-        <div class="success-message lang-es" style="display: none;">¡Mensaje enviado con éxito!</div>
-        <div class="error-message lang-es" style="display: none;">Hubo un error. Intentalo de nuevo.</div>
+        <div class="success-message" style="display: none;">¡Mensaje enviado con éxito!</div>
+        <div class="error-message" style="display: none;">Hubo un error. Intentalo de nuevo.</div>
       </div>
     </div>
+  </div>
 
-    <div class="lang-pt">
-      <h2>Contato</h2>
-      <div class="formulario">
+  <!-- Portugués -->
+  <div class="lang-pt">
+    <h2>Contato</h2>
+    <div class="contacto-wrapper">
+      <div class="contact-info">
+        <h3>Informações de contato</h3>
+        <p>Gustavo A Galbusera</p>
+        <p>📧 <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
+        <p>📱 <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+        <p>📘 <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
+        <p>📸 <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+      </div>
+      <div class="contact-form">
+        <h3>Formulário de contato</h3>
         <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
           <input type="text" name="nombre" placeholder="Nome" required>
           <input type="email" name="email" placeholder="Email" required>
           <input type="tel" name="telefono" placeholder="Telefone" required>
           <textarea name="mensaje" placeholder="Mensagem" rows="5" required></textarea>
-          <button type="submit">Enviar consulta</button>
+          <button type="submit">Enviar</button>
         </form>
-        <div class="success-message lang-pt" style="display: none;">Mensagem enviada com sucesso!</div>
-        <div class="error-message lang-pt" style="display: none;">Ocorreu um erro. Tente novamente.</div>
+        <div class="success-message" style="display: none;">Mensagem enviada com sucesso!</div>
+        <div class="error-message" style="display: none;">Ocorreu um erro. Tente novamente.</div>
       </div>
     </div>
+  </div>
 
-    <div class="lang-en">
-      <h2>Contact</h2>
-      <div class="formulario">
+  <!-- Inglés -->
+  <div class="lang-en">
+    <h2>Contact</h2>
+    <div class="contacto-wrapper">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Gustavo A Galbusera</p>
+        <p>📧 <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
+        <p>📱 <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+        <p>📘 <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
+        <p>📸 <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+      </div>
+      <div class="contact-form">
+        <h3>Contact Form</h3>
         <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
           <input type="text" name="nombre" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
@@ -144,14 +182,27 @@
           <textarea name="mensaje" placeholder="Message" rows="5" required></textarea>
           <button type="submit">Send Message</button>
         </form>
-        <div class="success-message lang-en" style="display: none;">Message sent successfully!</div>
-        <div class="error-message lang-en" style="display: none;">There was an error. Please try again.</div>
+        <div class="success-message" style="display: none;">Message sent successfully!</div>
+        <div class="error-message" style="display: none;">There was an error. Please try again.</div>
       </div>
     </div>
+  </div>
 
-    <div class="lang-zh">
-      <h2>联系方式</h2>
-      <div class="formulario">
+  <!-- Chino -->
+  <div class="lang-zh">
+    <h2>联系方式</h2>
+    <div class="contacto-wrapper">
+      <div class="contact-info">
+        <h3>联系信息</h3>
+        <p>Gustavo A Galbusera</p>
+        <p>📧 <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
+        <p>📱 <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+        <p>📘 <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
+        <p>📸 <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+      </div>
+      <div class="contact-form">
+        <h3>联系表单</h3>
         <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
           <input type="text" name="nombre" placeholder="姓名" required>
           <input type="email" name="email" placeholder="电子邮件" required>
@@ -159,11 +210,12 @@
           <textarea name="mensaje" placeholder="留言内容" rows="5" required></textarea>
           <button type="submit">发送</button>
         </form>
-        <div class="success-message lang-zh" style="display: none;">消息已成功发送！</div>
-        <div class="error-message lang-zh" style="display: none;">发生错误，请重试。</div>
+        <div class="success-message" style="display: none;">消息已成功发送！</div>
+        <div class="error-message" style="display: none;">发生错误，请重试。</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
     <div class="divisor"><img src="esquema3.png" alt="División 3"></div>
   </main>
