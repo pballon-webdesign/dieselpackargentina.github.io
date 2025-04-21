@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,24 @@
     }
     window.onload = () => changeLang('es');
   </script>
+  <style>
+    .success-message, .error-message {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.1em;
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
+      color: green;
+    }
+    .error-message {
+      color: red;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -106,81 +125,68 @@
 
     <div class="divisor"><img src="esquema2.png" alt="División 2"></div>
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-  <div class="lang-es">
-    <h2>Contacto</h2>
-    <div class="contacto">
-      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+   <!-- Sección Contacto -->
+  <section id="contacto">
+    <div class="lang-es">
+      <h2>Contacto</h2>
+      <div class="formulario">
+        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <input type="tel" name="telefono" placeholder="Teléfono" required>
+          <textarea name="mensaje" placeholder="Consulta" rows="5" required></textarea>
+          <button type="submit">Enviar consulta</button>
+        </form>
+        <div class="success-message lang-es" style="display: none;">¡Mensaje enviado con éxito!</div>
+        <div class="error-message lang-es" style="display: none;">Hubo un error. Intentalo de nuevo.</div>
+      </div>
     </div>
-    <div class="formulario">
-      <form action="https://formspree.io/f/xdkgnlrg" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <input type="tel" name="telefono" placeholder="Teléfono" required>
-        <textarea name="mensaje" placeholder="Consulta" rows="5" required></textarea>
-        <button type="submit">Enviar consulta</button>
-      </form>
+
+    <div class="lang-pt">
+      <h2>Contato</h2>
+      <div class="formulario">
+        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
+          <input type="text" name="nombre" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="telefono" placeholder="Telefone" required>
+          <textarea name="mensaje" placeholder="Mensagem" rows="5" required></textarea>
+          <button type="submit">Enviar consulta</button>
+        </form>
+        <div class="success-message lang-pt" style="display: none;">Mensagem enviada com sucesso!</div>
+        <div class="error-message lang-pt" style="display: none;">Ocorreu um erro. Tente novamente.</div>
+      </div>
     </div>
-  </div>
-  <div class="lang-pt">
-    <h2>Contato</h2>
-    <div class="contacto">
-      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+
+    <div class="lang-en">
+      <h2>Contact</h2>
+      <div class="formulario">
+        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
+          <input type="text" name="nombre" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="telefono" placeholder="Phone" required>
+          <textarea name="mensaje" placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="success-message lang-en" style="display: none;">Message sent successfully!</div>
+        <div class="error-message lang-en" style="display: none;">There was an error. Please try again.</div>
+      </div>
     </div>
-    <div class="formulario">
-      <form action="https://formspree.io/f/xdkgnlrg" method="POST">
-        <input type="text" name="nombre" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="telefono" placeholder="Telefone" required>
-        <textarea name="mensaje" placeholder="Mensagem" rows="5" required></textarea>
-        <button type="submit">Enviar consulta</button>
-      </form>
+
+    <div class="lang-zh">
+      <h2>联系方式</h2>
+      <div class="formulario">
+        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
+          <input type="text" name="nombre" placeholder="姓名" required>
+          <input type="email" name="email" placeholder="电子邮件" required>
+          <input type="tel" name="telefono" placeholder="电话" required>
+          <textarea name="mensaje" placeholder="留言内容" rows="5" required></textarea>
+          <button type="submit">发送</button>
+        </form>
+        <div class="success-message lang-zh" style="display: none;">消息已成功发送！</div>
+        <div class="error-message lang-zh" style="display: none;">发生错误，请重试。</div>
+      </div>
     </div>
-  </div>
-  <div class="lang-en">
-    <h2>Contact</h2>
-    <div class="contacto">
-      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
-    </div>
-    <div class="formulario">
-      <form action="https://formspree.io/f/xdkgnlrg" method="POST">
-        <input type="text" name="nombre" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="telefono" placeholder="Phone" required>
-        <textarea name="mensaje" placeholder="Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-  <div class="lang-zh">
-    <h2>联系方式</h2>
-    <div class="contacto">
-      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
-    </div>
-    <div class="formulario">
-      <form action="https://formspree.io/f/xdkgnlrg" method="POST">
-        <input type="text" name="nombre" placeholder="姓名" required>
-        <input type="email" name="email" placeholder="电子邮件" required>
-        <input type="tel" name="telefono" placeholder="电话" required>
-        <textarea name="mensaje" placeholder="留言内容" rows="5" required></textarea>
-        <button type="submit">发送</button>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
 
     <div class="divisor"><img src="esquema3.png" alt="División 3"></div>
   </main>
@@ -199,5 +205,45 @@
       <p>© Pablo Ballon | Web Design</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const forms = document.querySelectorAll("form#contactForm");
+      forms.forEach(form => {
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = form.getAttribute("action");
+
+          try {
+            const response = await fetch(action, {
+              method: "POST",
+              body: data,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
+
+            if (response.ok) {
+              form.style.transition = "opacity 0.5s ease-out";
+              form.style.opacity = 0;
+              setTimeout(() => {
+                form.style.display = "none";
+                parent.querySelector(".success-message").style.display = "block";
+              }, 500);
+            } else {
+              parent.querySelector(".error-message").style.display = "block";
+            }
+          } catch (error) {
+            const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
+            parent.querySelector(".error-message").style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
 </body>
 </html>
