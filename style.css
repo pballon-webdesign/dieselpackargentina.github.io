@@ -81,7 +81,6 @@ main {
 }
 
 section {
-  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -95,7 +94,7 @@ section {
 }
 
 .image-divider img {
-  max-width: 40px;
+  max-width: 60px;
   flex: 1 1 18%;
   height: auto;
 }
