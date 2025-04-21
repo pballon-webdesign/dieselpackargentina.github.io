@@ -3,128 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Título SEO -->
-  <title>Dieselpack Argentina | Repuestos y Equipamiento Diesel</title>
-
-  <!-- Meta Descripción -->
-  <meta name="description" content="Dieselpack Argentina - Repuestos y equipamiento para sistemas de inyección Diesel. Desde 1988 brindando soluciones en importación y exportación.">
-
-  <!-- Meta Robots -->
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph (para redes sociales) -->
-  <meta property="og:title" content="Dieselpack Argentina">
-  <meta property="og:description" content="Repuestos y equipamiento para sistemas de inyección Diesel. Importación, exportación y venta desde 1988.">
-  <meta property="og:image" content="https://dieselpack.com/logo.png"> <!-- Reemplazá con la ruta real -->
-  <meta property="og:url" content="https://dieselpack.com">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" href="logo miniatura.ico" sizes="any">
-  <link rel="icon" type="image/png" href="logo.png">
-
-  <!-- Estilos y fuentes -->
+  <title>Dieselpack Argentina</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-  <!-- Iconos -->
+  <link rel="icon" type="image/x-icon" href="logo-miniatura.ico">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- Script de idioma -->
   <script>
-    function toggleLanguage(lang) {
-      const esElements = document.querySelectorAll('.lang-es');
-      const enElements = document.querySelectorAll('.lang-en');
-      if (lang === 'es') {
-        esElements.forEach(el => el.style.display = 'block');
-        enElements.forEach(el => el.style.display = 'none');
-      } else {
-        esElements.forEach(el => el.style.display = 'none');
-        enElements.forEach(el => el.style.display = 'block');
-      }
+    function changeLang(lang) {
+      const langs = ['es', 'pt', 'en', 'zh'];
+      langs.forEach(l => {
+        document.querySelectorAll('.lang-' + l).forEach(el => {
+          el.style.display = (l === lang) ? 'block' : 'none';
+        });
+      });
     }
-    window.onload = () => toggleLanguage('es');
+    window.onload = () => changeLang('es');
   </script>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Dieselpack Argentina" class="logo">
+    <img src="logo.png" alt="Logo Dieselpack Argentina" class="logo">
     <nav>
       <ul>
-        <li class="lang-es"><a href="#quienes-somos">Quiénes Somos</a></li>
-        <li class="lang-en"><a href="#about-us">About Us</a></li>
-        <li class="lang-es"><a href="#marcas">Marcas</a></li>
-        <li class="lang-en"><a href="#brands">Brands</a></li>
-        <li class="lang-es"><a href="#contacto">Contacto</a></li>
-        <li class="lang-en"><a href="#contact">Contact</a></li>
-        <li><button onclick="toggleLanguage('es')">ES</button> / <button onclick="toggleLanguage('en')">EN</button></li>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#marcas">Marcas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li class="language-switch">
+          <img src="argentina.png" alt="ES" onclick="changeLang('es')">
+          <img src="brasil.png" alt="PT" onclick="changeLang('pt')">
+          <img src="usa.png" alt="EN" onclick="changeLang('en')">
+          <img src="china.png" alt="ZH" onclick="changeLang('zh')">
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="quienes-somos" class="lang-es">
-      <h2>Quiénes Somos</h2>
-      <p>
-        Somos Dieselpack Argentina, una compañía dedicada a la importación, exportación y venta de repuestos y equipamiento de inyección Diesel.<br><br>
-        Desde 1988 nos especializamos en la importación de repuestos para inyección Diesel. Desde 2004, exportamos a Latinoamérica equipamiento y herramientas para la reparación de sistemas Common Rail de fabricación nacional.<br><br>
-        Distribuimos equipamiento y repuestos para la reparación de sistemas Common Rail, UI/UIS y sistemas mecánicos. Ofrecemos herramientas y accesorios nacionales e importados, trabajando de forma personalizada junto a nuestros clientes.
-      </p>
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos">
+      <div class="lang-es">
+  <h2>Quiénes Somos</h2>
+  <p>
+    Somos Dieselpack Argentina, una compañía dedicada a la importación, exportación y venta de repuestos y equipamiento de inyección Diesel.<br><br>
+    Desde 1988 nos especializamos en la importación de repuestos para inyección Diesel. Desde 2004, exportamos a Latinoamérica equipamiento y herramientas para la reparación de sistemas Common Rail de fabricación nacional.<br><br>
+    Distribuimos equipamiento y repuestos para la reparación de sistemas Common Rail, UI/UIS y sistemas mecánicos. Ofrecemos herramientas y accesorios nacionales e importados, trabajando de forma personalizada junto a nuestros clientes.
+  </p>
+</div>
+      <div class="lang-pt">
+  <h2>Quem Somos</h2>
+  <p>
+    Somos a Dieselpack Argentina, uma empresa dedicada à importação, exportação e venda de peças e equipamentos para injeção diesel.<br><br>
+    Desde 1988, somos especializados na importação de peças para injeção diesel. Desde 2004, exportamos para a América Latina equipamentos e ferramentas para reparo de sistemas Common Rail de fabricação nacional.<br><br>
+    Distribuímos equipamentos e peças para a reparação de sistemas Common Rail, UI/UIS e sistemas mecânicos. Oferecemos ferramentas e acessórios nacionais e importados, trabalhando de forma personalizada com nossos clientes.
+  </p>
+</div>
+      <div class="lang-en">
+  <h2>About Us</h2>
+  <p>
+    We are Dieselpack Argentina, a company dedicated to the import, export, and sale of diesel injection parts and equipment.<br><br>
+    Since 1988, we have specialized in importing diesel injection parts. Since 2004, we have exported equipment and tools for the repair of nationally manufactured Common Rail systems to Latin America.<br><br>
+    We distribute equipment and parts for the repair of Common Rail, UI/UIS, and mechanical systems. We offer both domestic and imported tools and accessories, working closely and personally with our clients.
+  </p>
+</div>
+      <div class="lang-zh">
+  <h2>关于我们</h2>
+  <p>
+    我们是Dieselpack Argentina，一家致力于柴油喷射零件和设备的进口、出口和销售的公司。<br><br>
+    自1988年以来，我们专注于柴油喷射系统配件的进口。自2004年起，我们向拉丁美洲出口本地制造的共轨系统维修设备和工具。<br><br>
+    我们分销用于维修共轨、UI/UIS和机械系统的设备和零件。我们提供国产和进口的工具和配件，并与客户紧密合作，提供个性化服务。
+  </p>
+</div>
     </section>
 
-    <section id="about-us" class="lang-en">
-      <h2>About Us</h2>
-      <p>
-        We are Dieselpack Argentina, a company dedicated to the import, export, and sale of diesel injection equipment and spare parts.<br><br>
-        Since 1988, we have specialized in importing diesel injection parts. Since 2004, we have been exporting equipment and tools for the repair of locally manufactured Common Rail systems throughout Latin America.<br><br>
-        We distribute equipment and parts for the repair of Common Rail, UI/UIS, and mechanical systems. We offer both domestic and imported tools and accessories, working closely and personally with our clients.
-      </p>
-    </section>
+    <div class="divisor"><img src="esquema1.png" alt="División 1"></div>
 
-    <section id="marcas" class="lang-es">
-      <h2>Marcas con las que trabajamos</h2>
-      <div class="marcas">
-        <div><img src="bosch.png" alt="Bosch"><p>Repuestos y herramientas para sistemas Common Rail.</p></div>
-        <div><img src="denso.png" alt="Denso"><p>Componentes y sensores para inyección.</p></div>
-        <div><img src="delphi.png" alt="Delphi"><p>Bombas y sistemas UI/UIS.</p></div>
-        <div><img src="zexel.png" alt="Zexel"><p>Repuestos especializados para vehículos asiáticos.</p></div>
-        <div><img src="continental.png" alt="Continental"><p>Electrónica aplicada a la inyección.</p></div>
-        <div><img src="kingstar.png" alt="Kingstar"><p>Equipamiento para bancos de prueba.</p></div>
-      </div>
-    </section>
+    <!-- Sección Marcas -->
+    <section id="marcas">
+  <div class="lang-es">
+    <h2>Marcas</h2>
+    <p>Trabajamos todas las marcas del mercado.</p>
+  </div>
+  <div class="lang-pt">
+    <h2>Marcas</h2>
+    <p>Trabalhamos com todas as marcas do mercado.</p>
+  </div>
+  <div class="lang-en">
+    <h2>Brands</h2>
+    <p>We work with all brands on the market.</p>
+  </div>
+  <div class="lang-zh">
+    <h2>品牌</h2>
+    <p>我们经营市场上的所有品牌。</p>
+  </div>
+  <div class="marcas-grid">
+    <img src="bosch.png" alt="Bosch">
+    <img src="denso.png" alt="Denso">
+    <img src="delphi.png" alt="Delphi">
+    <img src="zexel.png" alt="Zexel">
+    <img src="continental.png" alt="Continental">
+    <img src="kingstar.png" alt="Kingstar">
+  </div>
+</section>
 
-    <section id="brands" class="lang-en">
-      <h2>Brands We Work With</h2>
-      <div class="marcas">
-        <div><img src="bosch.png" alt="Bosch"><p>Spare parts and tools for Common Rail systems.</p></div>
-        <div><img src="denso.png" alt="Denso"><p>Injection sensors and components.</p></div>
-        <div><img src="delphi.png" alt="Delphi"><p>Pumps and UI/UIS systems.</p></div>
-        <div><img src="zexel.png" alt="Zexel"><p>Specialized parts for Asian vehicles.</p></div>
-        <div><img src="continental.png" alt="Continental"><p>Injection-related electronics.</p></div>
-        <div><img src="kingstar.png" alt="Kingstar"><p>Test bench equipment.</p></div>
-      </div>
-    </section>
+    <div class="divisor"><img src="esquema2.png" alt="División 2"></div>
 
-    <section id="contacto" class="lang-es">
-      <h2>Contacto</h2>
-      <p><strong>Nombre:</strong> Gustavo Galbusera</p>
-      <p><i class="fas fa-phone"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03/" target="_blank">Facebook</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="#">Instagram</a> (pendiente)</p>
-      <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a> (opcional)</p>
-    </section>
+    <!-- Sección Contacto -->
+    <section id="contacto">
+  <div class="lang-es">
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+    </div>
+    <div class="formulario">
+      <form action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <textarea name="mensaje" placeholder="Consulta" rows="5" required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </div>
+  <div class="lang-pt">
+    <h2>Contato</h2>
+    <div class="contacto">
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+    </div>
+    <div class="formulario">
+      <form action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Telefone" required>
+        <textarea name="mensaje" placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </div>
+  <div class="lang-en">
+    <h2>Contact</h2>
+    <div class="contacto">
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+    </div>
+    <div class="formulario">
+      <form action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Phone" required>
+        <textarea name="mensaje" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <div class="lang-zh">
+    <h2>联系方式</h2>
+    <div class="contacto">
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
+      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03" target="_blank">Dieselpack Argentina</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dieselpackargentina" target="_blank">@dieselpackargentina</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+    </div>
+    <div class="formulario">
+      <form action="#" method="POST">
+        <input type="text" name="nombre" placeholder="姓名" required>
+        <input type="email" name="email" placeholder="电子邮件" required>
+        <input type="tel" name="telefono" placeholder="电话" required>
+        <textarea name="mensaje" placeholder="留言内容" rows="5" required></textarea>
+        <button type="submit">发送</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="lang-en">
-      <h2>Contact</h2>
-      <p><strong>Name:</strong> Gustavo Galbusera</p>
-      <p><i class="fas fa-phone"></i> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/gustavog03/" target="_blank">Facebook</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="#">Instagram</a> (pending)</p>
-      <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn</a> (optional)</p>
-    </section>
+    <div class="divisor"><img src="esquema3.png" alt="División 3"></div>
   </main>
 
   <footer>
@@ -137,8 +195,8 @@
       <img src="kingstar.png" alt="Kingstar">
     </div>
     <div class="marca-agua">
-      <img src="logodweb.png" alt="Web Design">
-      <p>Pablo Ballon | Web Design</p>
+      <img src="logodweb.ico" alt="Web Design">
+      <p>© Pablo Ballon | Web Design</p>
     </div>
   </footer>
 </body>
