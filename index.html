@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <html lang="es">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="logo-miniatura.ico">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script>
-    function changeLang(lang) {
-      const langs = ['es', 'pt', 'en', 'zh'];
-      langs.forEach(l => {
-        document.querySelectorAll('.lang-' + l).forEach(el => {
-          el.style.display = (l === lang) ? 'block' : 'none';
-        });
-      });
-    }
-    window.onload = () => changeLang('es');
-  </script>
   <style>
-    .success-message, .error-message {
-      margin-top: 15px;
-      font-weight: bold;
-      font-size: 1.1em;
-      opacity: 0;
-      animation: fadeIn 0.8s forwards;
-      color: green;
-    }
-    .error-message {
-      color: red;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
+    body { color: #1c5c41; }
+    footer { color: #777 !important; }
+    footer a, footer p { color: #777 !important; }
   </style>
 </head>
 <body>
@@ -191,7 +168,7 @@
     <div class="divisor"><img src="esquema3.png" alt="División 3"></div>
   </main>
 
-  <footer>
+ <footer>
     <div class="footer-logos">
       <img src="bosch.png" alt="Bosch">
       <img src="denso.png" alt="Denso">
@@ -202,10 +179,21 @@
     </div>
     <div class="marca-agua">
       <img src="logodweb.ico" alt="Web Design">
-      <p>© Pablo Ballon | Web Design</p>
+      <p style="font-size: 0.75em;">© Pablo Ballon | Web Design</p>
     </div>
   </footer>
+
   <script>
+    function changeLang(lang) {
+      const langs = ['es', 'pt', 'en', 'zh'];
+      langs.forEach(l => {
+        document.querySelectorAll('.lang-' + l).forEach(el => {
+          el.style.display = (l === lang) ? 'block' : 'none';
+        });
+      });
+    }
+    window.onload = () => changeLang('es');
+
     document.addEventListener("DOMContentLoaded", function () {
       const forms = document.querySelectorAll("form#contactForm");
       forms.forEach(form => {
@@ -214,16 +202,16 @@
           const data = new FormData(form);
           const action = form.getAttribute("action");
 
+          const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
+          parent.querySelector(".success-message").style.display = "none";
+          parent.querySelector(".error-message").style.display = "none";
+
           try {
             const response = await fetch(action, {
               method: "POST",
               body: data,
-              headers: {
-                Accept: "application/json",
-              },
+              headers: { Accept: "application/json" },
             });
-
-            const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
 
             if (response.ok) {
               form.style.transition = "opacity 0.5s ease-out";
@@ -236,7 +224,6 @@
               parent.querySelector(".error-message").style.display = "block";
             }
           } catch (error) {
-            const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
             parent.querySelector(".error-message").style.display = "block";
           }
         });
@@ -245,5 +232,4 @@
   </script>
 </body>
 </html>
-</body>
 </html>
