@@ -237,3 +237,21 @@ footer {
     opacity: 1;
   }
 }
+
+.contacto-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+}
