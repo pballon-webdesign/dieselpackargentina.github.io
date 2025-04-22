@@ -25,8 +25,8 @@ header {
 }
 
 .logo {
-  max-width: 320px;
-  margin: 5px auto 0;
+  max-width: 360px;
+  margin: 5px auto 20px;
 }
 
 nav ul {
@@ -90,13 +90,12 @@ section {
   align-items: center;
   padding: 40px 20px;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .image-divider img {
-  max-width: 40px;
-  flex: 1 1 18%;
-  height: auto;
+  flex: 0 0 auto;
 }
 
 h2 {
@@ -208,6 +207,7 @@ footer {
   text-align: center;
   padding: 30px 20px;
   border-top: 1px solid #ddd;
+  width: 100%;
 }
 
 .footer-logos {
@@ -247,6 +247,11 @@ footer {
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
+    align-items: center;
+  }
+
+    .language-switch {
+    justify-content: center;
   }
 
   .marcas-grid {
@@ -256,6 +261,10 @@ footer {
   .footer-logos img {
     height: 30px;
   }
+    nav ul li:not(.language-switch) {
+    display: inline-block;
+    margin: 5px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -264,7 +273,8 @@ footer {
   }
 
   .logo {
-    max-width: 160px;
+    max-width: 200px;
+    margin-bottom: 10px;
   }
   
 .success-message, .error-message {
@@ -300,4 +310,30 @@ footer {
   .contact-info, .contact-form {
     flex: 1 1 100%;
   }
+
+  .contact-form-title::after {
+  content: "Envíanos tu consulta";
+  font-size: 1.5em;
+  color: #1c5c41;
+}
+
+.lang-pt .contact-form-title::after {
+  content: "Envie-nos sua consulta";
+}
+
+.lang-en .contact-form-title::after {
+  content: "Send us your inquiry";
+}
+
+.lang-zh .contact-form-title::after {
+  content: "发送您的咨询";
+}
+  .contact-form-title {
+  margin-top: 40px;
+}
+
+.contact-form form {
+  margin-bottom: 60px;
+}
+
 }
