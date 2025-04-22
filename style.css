@@ -56,12 +56,6 @@ nav a:hover, nav button:hover {
   text-decoration: underline;
 }
 
-.language-switch {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
 .language-switch img {
   width: 24px;
   height: auto;
@@ -265,10 +259,6 @@ footer {
   .footer-logos img {
     height: 30px;
   }
-    nav ul li:not(.language-switch) {
-    display: inline-block;
-    margin: 5px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -349,4 +339,41 @@ footer {
   margin-bottom: 60px;
 }
 
+/* NUEVO menú horizontal para versión móvil */
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.menu-principal li a {
+  text-decoration: none;
+  color: #1c5c41;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Banderas centradas debajo */
+.language-switch {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.language-switch img {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.language-switch img:hover {
+  opacity: 1;
+}
+  
 }
