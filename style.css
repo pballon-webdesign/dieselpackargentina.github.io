@@ -88,15 +88,18 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 40px 20px;
   gap: 10px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .image-divider img {
-  flex: 1 1 18%;
-  max-width: 60px;
+  flex: 1 1 auto;
+  max-width: 100px;
+  width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 h2 {
