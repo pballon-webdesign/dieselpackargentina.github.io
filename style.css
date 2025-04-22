@@ -90,12 +90,13 @@ section {
   align-items: center;
   padding: 40px 20px;
   gap: 10px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .image-divider img {
-  flex: 0 0 auto;
+  flex: 1 1 18%;
+  max-width: 60px;
+  height: auto;
 }
 
 h2 {
@@ -164,7 +165,7 @@ form label::after {
   margin-left: 5px;
 }
 
-header.sticky {
+/* header.sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -172,7 +173,7 @@ header.sticky {
   background-color: #ffffff;
   z-index: 999;
   border-bottom: 1px solid #ddd;
-}
+} */
 
 form {
   max-width: 600px;
@@ -268,6 +269,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .image-divider img {
+    flex: 1 1 20%;
+    max-width: 40px;
+  }
   .marcas-grid {
     grid-template-columns: 1fr;
   }
@@ -285,8 +290,7 @@ footer {
   animation: fadeIn 0.8s forwards;
 }
 .success-message { color: green; }
-.error-message { color: red; }
-  
+.error-message { color: red; }  
 
 @keyframes fadeIn {
   to {
