@@ -89,9 +89,8 @@ section {
 }
 
 .image-divider img {
-  flex: 1 1 auto;
+  flex: 1 1 12%;
   max-width: 60px;
-  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -268,20 +267,25 @@ footer {
 }
 
 @media (max-width: 480px) {
+  
   .image-divider {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
 .image-divider img {
   flex: 0 0 auto;
-  max-width: 35px;
+  max-width: 30px;
 }
   .marcas-grid {
     grid-template-columns: 1fr;
   }
+
+  .marcas-grid img {
+  max-width: 100%;
+  height: auto;
+}
 
   .logo {
   max-width: 260px;
@@ -341,11 +345,6 @@ footer {
     flex-wrap: nowrap;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
   /* Centrado de banderas */
   .language-switch {
     display: flex;
@@ -359,6 +358,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .marcas-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
   /* Footer logos más grandes */
   .footer-logos img {
     height: 30px;
@@ -371,14 +375,13 @@ footer {
 
   /* Íconos del image-divider en una sola fila */
   .image-divider {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: space-between;
-    gap: 10px;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
 
   .image-divider img {
     flex: 0 0 auto;
-    max-width: 45px;
+    max-width: 35px;
   }
 }
