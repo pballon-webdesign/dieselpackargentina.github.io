@@ -314,31 +314,6 @@ footer {
     flex: 1 1 100%;
   }
 
-  .contact-form-title::after {
-  content: "Envíanos tu consulta";
-  font-size: 1.5em;
-  color: #1c5c41;
-}
-
-.lang-pt .contact-form-title::after {
-  content: "Envie-nos sua consulta";
-}
-
-.lang-en .contact-form-title::after {
-  content: "Send us your inquiry";
-}
-
-.lang-zh .contact-form-title::after {
-  content: "发送您的咨询";
-}
-  .contact-form-title {
-  margin-top: 40px;
-}
-
-.contact-form form {
-  margin-bottom: 60px;
-}
-
 /* NUEVO menú horizontal para versión móvil */
 .menu-principal {
   display: flex;
@@ -376,4 +351,28 @@ footer {
   opacity: 1;
 }
   
+}
+    .contact-form-title::after {
+  content: "Envíanos tu consulta";
+  font-size: 1.5em;
+  color: #1c5c41;
+}
+
+.lang-pt .contact-form-title::after {
+  content: "Envie-nos sua consulta";
+}
+
+.lang-en .contact-form-title::after {
+  content: "Send us your inquiry";
+}
+
+.lang-zh .contact-form-title::after {
+  content: "发送您的咨询";
+}
+  .contact-form-title {
+  margin-top: 40px;
+}
+
+.contact-form form {
+  margin-bottom: 60px;
 }
