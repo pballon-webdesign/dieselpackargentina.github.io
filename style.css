@@ -314,6 +314,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+   .logo img {
+    max-height: 120px;
+    margin-bottom: 20px;
+  }
+  
   .contact-info, .contact-form {
     flex: 1 1 100%;
   }
