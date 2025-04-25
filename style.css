@@ -352,6 +352,7 @@ footer {
     padding: 0 15px;
     margin-top: 10px;
     flex-wrap: nowrap;
+    margin-bottom: 10px;
   }
 
   /* Centrado de banderas */
