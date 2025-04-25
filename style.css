@@ -50,6 +50,7 @@ nav a, nav button {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  margin: 10px 10px 10px 10px;
 }
 
 nav a:hover, nav button:hover {
