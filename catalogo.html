@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.dieselpack.com/catalogo.html" />
+  <meta name="description" content="Catálogo Dieselpack Argentina: válvulas, sensores, inyectores, toberas, kits de reparación y piezas menores para inyección diesel.">
+  <title>Catálogo | Dieselpack Argentina</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" alt="Dieselpack Argentina"></a>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li class="lang-block lang-es active"><a href="index.html">Inicio</a></li>
+          <li class="lang-block lang-pt"><a href="index.html">Início</a></li>
+          <li class="lang-block lang-en"><a href="index.html">Home</a></li>
+          <li class="lang-block lang-zh"><a href="index.html">首页</a></li>
+
+          <li class="lang-block lang-es active"><a href="nosotros.html">Quiénes Somos</a></li>
+          <li class="lang-block lang-pt"><a href="nosotros.html">Quem Somos</a></li>
+          <li class="lang-block lang-en"><a href="nosotros.html">About Us</a></li>
+          <li class="lang-block lang-zh"><a href="nosotros.html">关于我们</a></li>
+
+          <li class="lang-block lang-es active"><a href="catalogo.html" class="active">Catálogo</a></li>
+          <li class="lang-block lang-pt"><a href="catalogo.html" class="active">Catálogo</a></li>
+          <li class="lang-block lang-en"><a href="catalogo.html" class="active">Catalog</a></li>
+          <li class="lang-block lang-zh"><a href="catalogo.html" class="active">产品目录</a></li>
+
+          <li class="lang-block lang-es active"><a href="contacto.html">Contacto</a></li>
+          <li class="lang-block lang-pt"><a href="contacto.html">Contato</a></li>
+          <li class="lang-block lang-en"><a href="contacto.html">Contact</a></li>
+          <li class="lang-block lang-zh"><a href="contacto.html">联系方式</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <img src="assets/argentina.png" alt="ES" data-lang="es" onclick="changeLang('es')">
+        <img src="assets/brasil.png" alt="PT" data-lang="pt" onclick="changeLang('pt')">
+        <img src="assets/usa.png" alt="EN" data-lang="en" onclick="changeLang('en')">
+        <img src="assets/china.png" alt="ZH" data-lang="zh" onclick="changeLang('zh')">
+      </div>
+    </div>
+  </header>
+
+  <div class="stripe-divider"></div>
+
+  <div class="breadcrumb">
+    <div class="lang-block lang-es active"><a href="index.html">Inicio</a> / Catálogo</div>
+    <div class="lang-block lang-pt"><a href="index.html">Início</a> / Catálogo</div>
+    <div class="lang-block lang-en"><a href="index.html">Home</a> / Catalog</div>
+    <div class="lang-block lang-zh"><a href="index.html">首页</a> / 产品目录</div>
+  </div>
+
+  <section class="block">
+    <div class="section-header reveal">
+      <div class="lang-block lang-es active">
+        <h2>Catálogo</h2>
+        <p>Seis líneas de producto. Sin precios ni compra online: cada consulta la atendemos directo, por WhatsApp o el formulario de contacto.</p>
+      </div>
+      <div class="lang-block lang-pt">
+        <h2>Catálogo</h2>
+        <p>Seis linhas de produto. Sem preços nem compra online: cada consulta é atendida diretamente, por WhatsApp ou pelo formulário de contato.</p>
+      </div>
+      <div class="lang-block lang-en">
+        <h2>Catalog</h2>
+        <p>Six product lines. No prices or online purchase: every inquiry is handled directly, via WhatsApp or the contact form.</p>
+      </div>
+      <div class="lang-block lang-zh">
+        <h2>产品目录</h2>
+        <p>六大产品线。无在线报价或购买功能：所有咨询均通过WhatsApp或联系表单直接处理。</p>
+      </div>
+    </div>
+
+    <div class="category-grid reveal-stagger" style="margin-bottom:16px;">
+
+      <div class="category-card" data-category="valvulas" onclick="toggleCategory('valvulas')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/valvulas.png" alt="Válvulas"></div>
+        <h3 class="lang-block lang-es active">Válvulas</h3>
+        <h3 class="lang-block lang-pt">Válvulas</h3>
+        <h3 class="lang-block lang-en">Valves</h3>
+        <h3 class="lang-block lang-zh">阀门</h3>
+        <p>Bosch · Denso · VDO · Kingstar</p>
+      </div>
+
+      <div class="category-card" data-category="sensores" onclick="toggleCategory('sensores')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/Sensor.png" alt="Sensores"></div>
+        <h3 class="lang-block lang-es active">Sensores</h3>
+        <h3 class="lang-block lang-pt">Sensores</h3>
+        <h3 class="lang-block lang-en">Sensors</h3>
+        <h3 class="lang-block lang-zh">传感器</h3>
+        <p>Bosch · Denso</p>
+      </div>
+
+      <div class="category-card" data-category="inyectores" onclick="toggleCategory('inyectores')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/Inyector.png" alt="Inyectores"></div>
+        <h3 class="lang-block lang-es active">Inyectores</h3>
+        <h3 class="lang-block lang-pt">Injetores</h3>
+        <h3 class="lang-block lang-en">Injectors</h3>
+        <h3 class="lang-block lang-zh">喷油器</h3>
+        <p>Bosch · Denso · Delphi · VDO</p>
+      </div>
+
+      <div class="category-card" data-category="toberas" onclick="toggleCategory('toberas')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/Tobera.png" alt="Toberas"></div>
+        <h3 class="lang-block lang-es active">Toberas</h3>
+        <h3 class="lang-block lang-pt">Bicos</h3>
+        <h3 class="lang-block lang-en">Nozzles</h3>
+        <h3 class="lang-block lang-zh">喷嘴</h3>
+        <p>Bosch · Delphi · Denso · Kingstar</p>
+      </div>
+
+      <div class="category-card" data-category="kits" onclick="toggleCategory('kits')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/kit_reparacion.png" alt="Kits de reparación"></div>
+        <h3 class="lang-block lang-es active">Kits de reparación</h3>
+        <h3 class="lang-block lang-pt">Kits de reparo</h3>
+        <h3 class="lang-block lang-en">Repair kits</h3>
+        <h3 class="lang-block lang-zh">维修包</h3>
+        <p>Bosch · Denso</p>
+      </div>
+
+      <div class="category-card" data-category="menores" onclick="toggleCategory('menores')" role="button" tabindex="0">
+        <div class="icon-wrap"><img src="assets/piezas_menores.png" alt="Piezas menores"></div>
+        <h3 class="lang-block lang-es active">Piezas menores</h3>
+        <h3 class="lang-block lang-pt">Peças menores</h3>
+        <h3 class="lang-block lang-en">Minor parts</h3>
+        <h3 class="lang-block lang-zh">小型零件</h3>
+        <p class="lang-block lang-es active">Filtros, plaquitas, hongos</p>
+        <p class="lang-block lang-pt">Filtros, arruelas, retentores</p>
+        <p class="lang-block lang-en">Filters, plates, seals</p>
+        <p class="lang-block lang-zh">滤芯、垫片、密封件</p>
+      </div>
+
+      <a href="contacto.html" class="category-card category-card-more">
+        <div class="icon-wrap"><svg viewBox="0 0 100 100" width="44" height="44" fill="none" stroke="currentColor" stroke-width="7"><line x1="50" y1="20" x2="50" y2="80"/><line x1="20" y1="50" x2="80" y2="50"/></svg></div>
+        <h3 class="lang-block lang-es active">Más categorías a pedido</h3>
+        <h3 class="lang-block lang-pt">Mais categorias sob consulta</h3>
+        <h3 class="lang-block lang-en">More categories on request</h3>
+        <h3 class="lang-block lang-zh">更多品类可询价</h3>
+      </a>
+
+    </div>
+
+    <p class="catalog-hint">
+      <span class="lang-block lang-es active">Tocá una categoría para ver el detalle de producto.</span>
+      <span class="lang-block lang-pt">Toque em uma categoria para ver o detalhe do produto.</span>
+      <span class="lang-block lang-en">Tap a category to see product detail.</span>
+      <span class="lang-block lang-zh">点击类别查看产品详情。</span>
+    </p>
+
+    <div class="category-detail" id="detail-valvulas">
+      <h3>
+        <span class="lang-block lang-es active">Válvulas</span>
+        <span class="lang-block lang-pt">Válvulas</span>
+        <span class="lang-block lang-en">Valves</span>
+        <span class="lang-block lang-zh">阀门</span>
+        <span class="detail-brands">Bosch · Denso · VDO · Kingstar</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/bosch_valvula_1_con_caja.jpg" alt="Válvula Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula reguladora de presión</span>
+            <span class="lang-block lang-pt">Válvula reguladora de pressão</span>
+            <span class="lang-block lang-en">Pressure regulator valve</span>
+            <span class="lang-block lang-zh">压力调节阀</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/denso_valvula_1_caja.jpg" alt="Válvula Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula de control</span>
+            <span class="lang-block lang-pt">Válvula de controle</span>
+            <span class="lang-block lang-en">Control valve</span>
+            <span class="lang-block lang-zh">控制阀</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/vdo_valvula_reguladora_1.jpg" alt="Válvula VDO"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula reguladora</span>
+            <span class="lang-block lang-pt">Válvula reguladora</span>
+            <span class="lang-block lang-en">Regulator valve</span>
+            <span class="lang-block lang-zh">调节阀</span>
+          </p><span class="brand-tag">VDO</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/kingstar_valvula_1_x4.jpg" alt="Válvula Kingstar"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula reguladora</span>
+            <span class="lang-block lang-pt">Válvula reguladora</span>
+            <span class="lang-block lang-en">Regulator valve</span>
+            <span class="lang-block lang-zh">调节阀</span>
+          </p><span class="brand-tag">Kingstar</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/bosch_valvula_3_caja.jpg" alt="Válvula Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula reguladora (caja)</span>
+            <span class="lang-block lang-pt">Válvula reguladora (caixa)</span>
+            <span class="lang-block lang-en">Regulator valve (boxed)</span>
+            <span class="lang-block lang-zh">调节阀（盒装）</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/bosch_valvula_4_blister.jpg" alt="Válvula Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Componente de válvula</span>
+            <span class="lang-block lang-pt">Componente de válvula</span>
+            <span class="lang-block lang-en">Valve component</span>
+            <span class="lang-block lang-zh">阀门组件</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/valvulas/kingstar_valvula_2_x5.jpg" alt="Válvula Kingstar"></div>
+          <p>
+            <span class="lang-block lang-es active">Válvula de entrega (paq. x5)</span>
+            <span class="lang-block lang-pt">Válvula de descarga (emb. x5)</span>
+            <span class="lang-block lang-en">Delivery valve (5-pack)</span>
+            <span class="lang-block lang-zh">出油阀（5件装）</span>
+          </p><span class="brand-tag">Kingstar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-detail" id="detail-sensores">
+      <h3>
+        <span class="lang-block lang-es active">Sensores</span>
+        <span class="lang-block lang-pt">Sensores</span>
+        <span class="lang-block lang-en">Sensors</span>
+        <span class="lang-block lang-zh">传感器</span>
+        <span class="detail-brands">Bosch · Denso</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/sensores/bosch_sensor_1.jpg" alt="Sensor Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Sensor de presión de riel</span>
+            <span class="lang-block lang-pt">Sensor de pressão do rail</span>
+            <span class="lang-block lang-en">Rail pressure sensor</span>
+            <span class="lang-block lang-zh">共轨压力传感器</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/sensores/denso_sensor_1.jpg" alt="Sensor Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Sensor de presión</span>
+            <span class="lang-block lang-pt">Sensor de pressão</span>
+            <span class="lang-block lang-en">Pressure sensor</span>
+            <span class="lang-block lang-zh">压力传感器</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/sensores/bosch_sensor_5.jpg" alt="Sensor Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Sensor de posición</span>
+            <span class="lang-block lang-pt">Sensor de posição</span>
+            <span class="lang-block lang-en">Position sensor</span>
+            <span class="lang-block lang-zh">位置传感器</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/sensores/bosch_sensor_3_x5.jpg" alt="Sensor Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Sensor de presión (paq. x5)</span>
+            <span class="lang-block lang-pt">Sensor de pressão (emb. x5)</span>
+            <span class="lang-block lang-en">Pressure sensor (5-pack)</span>
+            <span class="lang-block lang-zh">压力传感器（5件装）</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/sensores/bosch_sensor_4_x10.jpg" alt="Sensor Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Sensor de presión (paq. x10)</span>
+            <span class="lang-block lang-pt">Sensor de pressão (emb. x10)</span>
+            <span class="lang-block lang-en">Pressure sensor (10-pack)</span>
+            <span class="lang-block lang-zh">压力传感器（10件装）</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-detail" id="detail-inyectores">
+      <h3>
+        <span class="lang-block lang-es active">Inyectores</span>
+        <span class="lang-block lang-pt">Injetores</span>
+        <span class="lang-block lang-en">Injectors</span>
+        <span class="lang-block lang-zh">喷油器</span>
+        <span class="detail-brands">Bosch · Denso · Delphi · VDO</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/inyectores/bosch_inyector_1.jpg" alt="Inyector Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Inyector common rail</span>
+            <span class="lang-block lang-pt">Injetor common rail</span>
+            <span class="lang-block lang-en">Common rail injector</span>
+            <span class="lang-block lang-zh">共轨喷油器</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/inyectores/bosch_inyector_3_x4.jpg" alt="Inyector Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Inyector common rail</span>
+            <span class="lang-block lang-pt">Injetor common rail</span>
+            <span class="lang-block lang-en">Common rail injector</span>
+            <span class="lang-block lang-zh">共轨喷油器</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/inyectores/denso_inyector_1.jpg" alt="Inyector Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Inyector common rail</span>
+            <span class="lang-block lang-pt">Injetor common rail</span>
+            <span class="lang-block lang-en">Common rail injector</span>
+            <span class="lang-block lang-zh">共轨喷油器</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/inyectores/delphi_inyector_1.jpg" alt="Inyector Delphi"></div>
+          <p>
+            <span class="lang-block lang-es active">Inyector common rail</span>
+            <span class="lang-block lang-pt">Injetor common rail</span>
+            <span class="lang-block lang-en">Common rail injector</span>
+            <span class="lang-block lang-zh">共轨喷油器</span>
+          </p><span class="brand-tag">Delphi</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/inyectores/vdo_inyector_1.jpg" alt="Inyector VDO"></div>
+          <p>
+            <span class="lang-block lang-es active">Inyector common rail</span>
+            <span class="lang-block lang-pt">Injetor common rail</span>
+            <span class="lang-block lang-en">Common rail injector</span>
+            <span class="lang-block lang-zh">共轨喷油器</span>
+          </p><span class="brand-tag">VDO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-detail" id="detail-toberas">
+      <h3>
+        <span class="lang-block lang-es active">Toberas</span>
+        <span class="lang-block lang-pt">Bicos</span>
+        <span class="lang-block lang-en">Nozzles</span>
+        <span class="lang-block lang-zh">喷嘴</span>
+        <span class="detail-brands">Bosch · Delphi · Denso · Kingstar</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/bosch_tobera_1.jpg" alt="Tobera Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle</span>
+            <span class="lang-block lang-pt">Bico / nozzle</span>
+            <span class="lang-block lang-en">Nozzle</span>
+            <span class="lang-block lang-zh">喷嘴</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/delphi_tobera_1.jpg" alt="Tobera Delphi"></div>
+          <p>
+            <span class="lang-block lang-es active">Kit tobera / nozzle</span>
+            <span class="lang-block lang-pt">Kit bico / nozzle</span>
+            <span class="lang-block lang-en">Nozzle kit</span>
+            <span class="lang-block lang-zh">喷嘴套件</span>
+          </p><span class="brand-tag">Delphi</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/denso_tobera_1.jpg" alt="Tobera Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Toberas / nozzles (x10)</span>
+            <span class="lang-block lang-pt">Bicos / nozzles (x10)</span>
+            <span class="lang-block lang-en">Nozzles (x10)</span>
+            <span class="lang-block lang-zh">喷嘴（10个装）</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/kingstar_tobera_1.jpg" alt="Tobera Kingstar"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle</span>
+            <span class="lang-block lang-pt">Bico / nozzle</span>
+            <span class="lang-block lang-en">Nozzle</span>
+            <span class="lang-block lang-zh">喷嘴</span>
+          </p><span class="brand-tag">Kingstar</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/bosch_tobera_2.jpg" alt="Tobera Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle</span>
+            <span class="lang-block lang-pt">Bico / nozzle</span>
+            <span class="lang-block lang-en">Nozzle</span>
+            <span class="lang-block lang-zh">喷嘴</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/bosch_tobera_3_x2.jpg" alt="Tobera Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle (paq. x2)</span>
+            <span class="lang-block lang-pt">Bico / nozzle (emb. x2)</span>
+            <span class="lang-block lang-en">Nozzle (2-pack)</span>
+            <span class="lang-block lang-zh">喷嘴（2件装）</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/bosch_tobera_4_x2.jpg" alt="Tobera Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle (paq. x2)</span>
+            <span class="lang-block lang-pt">Bico / nozzle (emb. x2)</span>
+            <span class="lang-block lang-en">Nozzle (2-pack)</span>
+            <span class="lang-block lang-zh">喷嘴（2件装）</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/delphi_tobera_2_caja.jpg" alt="Tobera Delphi"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle</span>
+            <span class="lang-block lang-pt">Bico / nozzle</span>
+            <span class="lang-block lang-en">Nozzle</span>
+            <span class="lang-block lang-zh">喷嘴</span>
+          </p><span class="brand-tag">Delphi</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/toberas/kingstar_tobera_2_x2.jpg" alt="Tobera Kingstar"></div>
+          <p>
+            <span class="lang-block lang-es active">Tobera / nozzle (paq. x2)</span>
+            <span class="lang-block lang-pt">Bico / nozzle (emb. x2)</span>
+            <span class="lang-block lang-en">Nozzle (2-pack)</span>
+            <span class="lang-block lang-zh">喷嘴（2件装）</span>
+          </p><span class="brand-tag">Kingstar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-detail" id="detail-kits">
+      <h3>
+        <span class="lang-block lang-es active">Kits de reparación</span>
+        <span class="lang-block lang-pt">Kits de reparo</span>
+        <span class="lang-block lang-en">Repair kits</span>
+        <span class="lang-block lang-zh">维修包</span>
+        <span class="detail-brands">Bosch · Denso</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/kits_reparacion/bosch_kit_reparacion_1.jpg" alt="Kit de reparación Bosch"></div>
+          <p>
+            <span class="lang-block lang-es active">Kit de reparación de inyector</span>
+            <span class="lang-block lang-pt">Kit de reparo de injetor</span>
+            <span class="lang-block lang-en">Injector repair kit</span>
+            <span class="lang-block lang-zh">喷油器维修包</span>
+          </p><span class="brand-tag">Bosch</span>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/kits_reparacion/denso_kit_reparacion_1_x2.jpg" alt="Kit de reparación Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Kit de reparación de inyector</span>
+            <span class="lang-block lang-pt">Kit de reparo de injetor</span>
+            <span class="lang-block lang-en">Injector repair kit</span>
+            <span class="lang-block lang-zh">喷油器维修包</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-detail" id="detail-menores">
+      <h3>
+        <span class="lang-block lang-es active">Piezas menores</span>
+        <span class="lang-block lang-pt">Peças menores</span>
+        <span class="lang-block lang-en">Minor parts</span>
+        <span class="lang-block lang-zh">小型零件</span>
+      </h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/piezas_menores/arandela_cobre_1_bulto.jpg" alt="Arandelas de cobre"></div>
+          <p>
+            <span class="lang-block lang-es active">Arandela de cobre</span>
+            <span class="lang-block lang-pt">Arruela de cobre</span>
+            <span class="lang-block lang-en">Copper washer</span>
+            <span class="lang-block lang-zh">铜垫圈</span>
+          </p>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/piezas_menores/herramienta_1.jpg" alt="Herramienta"></div>
+          <p>
+            <span class="lang-block lang-es active">Herramienta de extracción</span>
+            <span class="lang-block lang-pt">Ferramenta de extração</span>
+            <span class="lang-block lang-en">Extraction tool</span>
+            <span class="lang-block lang-zh">拆卸工具</span>
+          </p>
+        </div>
+        <div class="product-card">
+          <div class="pc-photo"><img src="assets/productos/piezas_menores/denso_pin_1.jpg" alt="Pin Denso"></div>
+          <p>
+            <span class="lang-block lang-es active">Pin / perno</span>
+            <span class="lang-block lang-pt">Pino / pino de fixação</span>
+            <span class="lang-block lang-en">Pin</span>
+            <span class="lang-block lang-zh">销钉</span>
+          </p><span class="brand-tag">Denso</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:48px;">
+      <div class="lang-block lang-es active">
+        <p style="color:var(--gray); margin-bottom:16px;">¿Buscás algo puntual? Escribinos con la referencia o el equipo que necesitás.</p>
+        <a href="contacto.html" class="btn btn-primary">Hacer una consulta</a>
+      </div>
+      <div class="lang-block lang-pt">
+        <p style="color:var(--gray); margin-bottom:16px;">Procurando algo específico? Escreva com a referência ou o equipamento que precisa.</p>
+        <a href="contacto.html" class="btn btn-primary">Fazer uma consulta</a>
+      </div>
+      <div class="lang-block lang-en">
+        <p style="color:var(--gray); margin-bottom:16px;">Looking for something specific? Write to us with the reference or equipment you need.</p>
+        <a href="contacto.html" class="btn btn-primary">Make an inquiry</a>
+      </div>
+      <div class="lang-block lang-zh">
+        <p style="color:var(--gray); margin-bottom:16px;">需要特定零件？请附上型号或设备信息与我们联系。</p>
+        <a href="contacto.html" class="btn btn-primary">发起咨询</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brands">
+        <img src="assets/bosch.png" alt="Bosch">
+        <img src="assets/denso.png" alt="Denso">
+        <img src="assets/delphi.png" alt="Delphi">
+        <img src="assets/zexel.png" alt="Zexel">
+        <img src="assets/continental.png" alt="Continental">
+        <img src="assets/kingstar.png" alt="Kingstar">
+      </div>
+      <div class="footer-top-row">
+        <img src="assets/logo.svg" alt="Dieselpack Argentina" class="footer-logo">
+        <p class="footer-meta">© 2026 Dieselpack Argentina</p>
+        <div class="footer-social">
+          <a href="https://wa.me/5491133304537" target="_blank" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.4.1.2 1.6 2.5 4 3.4.6.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.3-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-3.5H13V7.4c0-1 .3-1.7 1.8-1.7H17V2.5C16.6 2.4 15.4 2.3 14 2.3c-2.9 0-4.9 1.8-4.9 5v2.2H6v3.5h3v9z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.1 0 4.9 2.7 4.9 6.2V23h-4v-6.8c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V23h-4z"/></svg>
+          </a>
+        </div>
+      </div>
+      <a class="credit" href="#" onclick="return false;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+        Sitio por Pablo Ballon Web Design
+      </a>
+    </div>
+  </footer>
+
+  <a class="float-whatsapp" href="https://wa.me/5491133304537" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.4.1.2 1.6 2.5 4 3.4.6.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.3-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+  </a>
+  <button class="back-to-top" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
