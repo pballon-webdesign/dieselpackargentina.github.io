@@ -1,331 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
-<html lang="es">
-<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://www.dieselpack.com/" />
   <meta name="description" content="Dieselpack Argentina: importación y exportación de repuestos y equipamiento para inyección diesel desde 1988.">
-  <title>Dieselpack Argentina</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="/logo-miniatura.png">
-  <link rel="shortcut icon" type="image/png" href="/logo-miniatura.png">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    body { color: #1c5c41; }
-    footer { color: #777 !important; }
-    footer a, footer p { color: #777 !important; }
-  </style>
-  <!-- Google Analytics -->
+  <title>Dieselpack Argentina | Importación de repuestos diesel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYCVDMETS5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-GYCVDMETS5');
   </script>
-  <!-- Fin de Google Analytics -->
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Dieselpack Argentina" class="logo">
-    <nav>
-      <ul class="menu-principal">
-        <div class="lang-es">
-          <li><a href="#quienes-somos">Quiénes Somos</a></li>
-          <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </div>
-        <div class="lang-pt">
-          <li><a href="#quienes-somos">Quem Somos</a></li>
-          <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contacto">Contato</a></li>
-        </div>
-        <div class="lang-en">
-          <li><a href="#quienes-somos">About Us</a></li>
-          <li><a href="#marcas">Brands</a></li>
-          <li><a href="#contacto">Contact</a></li>
-        </div>
-        <div class="lang-zh">
-          <li><a href="#quienes-somos">关于我们</a></li>
-          <li><a href="#marcas">品牌</a></li>
-          <li><a href="#contacto">联系方式</a></li>
-        </div>
-      </ul>
-      <div class="language-switch">
-        <img src="argentina.png" alt="ES" onclick="changeLang('es')">
-        <img src="brasil.png" alt="PT" onclick="changeLang('pt')">
-        <img src="usa.png" alt="EN" onclick="changeLang('en')">
-        <img src="china.png" alt="ZH" onclick="changeLang('zh')">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" alt="Dieselpack Argentina"></a>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li class="lang-block lang-es active"><a href="index.html" class="active">Inicio</a></li>
+          <li class="lang-block lang-pt"><a href="index.html" class="active">Início</a></li>
+          <li class="lang-block lang-en"><a href="index.html" class="active">Home</a></li>
+          <li class="lang-block lang-zh"><a href="index.html" class="active">首页</a></li>
+
+          <li class="lang-block lang-es active"><a href="nosotros.html">Quiénes Somos</a></li>
+          <li class="lang-block lang-pt"><a href="nosotros.html">Quem Somos</a></li>
+          <li class="lang-block lang-en"><a href="nosotros.html">About Us</a></li>
+          <li class="lang-block lang-zh"><a href="nosotros.html">关于我们</a></li>
+          <li class="lang-block lang-es active"><a href="contacto.html">Contacto</a></li>
+          <li class="lang-block lang-pt"><a href="contacto.html">Contato</a></li>
+          <li class="lang-block lang-en"><a href="contacto.html">Contact</a></li>
+          <li class="lang-block lang-zh"><a href="contacto.html">联系方式</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <img src="assets/argentina.png" alt="ES" data-lang="es" onclick="changeLang('es')">
+        <img src="assets/brasil.png" alt="PT" data-lang="pt" onclick="changeLang('pt')">
+        <img src="assets/usa.png" alt="EN" data-lang="en" onclick="changeLang('en')">
+        <img src="assets/china.png" alt="ZH" data-lang="zh" onclick="changeLang('zh')">
       </div>
-    </nav>
+    </div>
   </header>
-  <main>
-    <!-- Sección Quiénes Somos -->
-    <section id="quienes-somos">
-      <div class="lang-es">
-  <h2>Quiénes Somos</h2>
-  <p>
-    Somos Dieselpack Argentina, una compañía dedicada a la importación, exportación y venta de repuestos y equipamiento de inyección Diesel.<br><br>
-    Desde 1988 nos especializamos en la importación de repuestos para inyección Diesel. Desde 2004, exportamos a Latinoamérica equipamiento y herramientas para la reparación de sistemas Common Rail de fabricación nacional.<br><br>
-    Distribuimos equipamiento y repuestos para la reparación de sistemas Common Rail, UI/UIS y sistemas mecánicos. Ofrecemos herramientas y accesorios nacionales e importados, trabajando de forma personalizada junto a nuestros clientes.
-  </p>
-</div>
-      <div class="lang-pt">
-  <h2>Quem Somos</h2>
-  <p>
-    Somos a Dieselpack Argentina, uma empresa dedicada à importação, exportação e venda de peças e equipamentos para injeção diesel.<br><br>
-    Desde 1988, somos especializados na importação de peças para injeção diesel. Desde 2004, exportamos para a América Latina equipamentos e ferramentas para reparo de sistemas Common Rail de fabricação nacional.<br><br>
-    Distribuímos equipamentos e peças para a reparação de sistemas Common Rail, UI/UIS e sistemas mecânicos. Oferecemos ferramentas e acessórios nacionais e importados, trabalhando de forma personalizada com nossos clientes.
-  </p>
-</div>
-      <div class="lang-en">
-  <h2>About Us</h2>
-  <p>
-    We are Dieselpack Argentina, a company dedicated to the import, export, and sale of diesel injection parts and equipment.<br><br>
-    Since 1988, we have specialized in importing diesel injection parts. Since 2004, we have exported equipment and tools for the repair of nationally manufactured Common Rail systems to Latin America.<br><br>
-    We distribute equipment and parts for the repair of Common Rail, UI/UIS, and mechanical systems. We offer both domestic and imported tools and accessories, working closely and personally with our clients.
-  </p>
-</div>
-      <div class="lang-zh">
-  <h2>关于我们</h2>
-  <p>
-    我们是Dieselpack Argentina，一家致力于柴油喷射零件和设备的进口、出口和销售的公司。<br><br>
-    自1988年以来，我们专注于柴油喷射系统配件的进口。自2004年起，我们向拉丁美洲出口本地制造的共轨系统维修设备和工具。<br><br>
-    我们分销用于维修共轨、UI/UIS和机械系统的设备和零件。我们提供国产和进口的工具和配件，并与客户紧密合作，提供个性化服务。
-  </p>
-</div>
-    </section>
 
-     <section class="image-divider">
-    <img src="Bomba-presion.png" alt="Bomba presión">
-    <img src="Inyector.png" alt="Inyector">
-    <img src="Probador-inyectores.png" alt="Probador de inyectores">
-    <img src="Sensor.png" alt="Sensor">
-    <img src="Tobera.png" alt="Tobera">
-    <img src="Bomba-presion.png" alt="Bomba presión">
-    <img src="Inyector.png" alt="Inyector">
-    <img src="Probador-inyectores.png" alt="Probador de inyectores" class="hide-mobile">
-    <img src="Sensor.png" alt="Sensor" class="hide-mobile">
-    <img src="Tobera.png" alt="Tobera" class="hide-mobile">
+  <div class="stripe-divider"></div>
+
+  <section class="hero">
+    <div class="lang-block lang-es active">
+      <p class="hero-eyebrow">Importación y exportación</p>
+      <h1>Repuestos para inyección diesel</h1>
+      <p>Válvulas, sensores, inyectores, toberas y piezas menores. Trabajamos con proveedores propios en China para abastecer a distribuidores en toda la región.</p>
+      <a href="contacto.html" class="btn btn-white">Contactanos</a>
+    </div>
+    <div class="lang-block lang-pt">
+      <p class="hero-eyebrow">Importação e exportação</p>
+      <h1>Peças para injeção diesel</h1>
+      <p>Válvulas, sensores, injetores, bicos e peças menores. Trabalhamos com fornecedores próprios na China para abastecer distribuidores em toda a região.</p>
+      <a href="contacto.html" class="btn btn-white">Contato</a>
+    </div>
+    <div class="lang-block lang-en">
+      <p class="hero-eyebrow">Importing and exporting</p>
+      <h1>Diesel injection parts</h1>
+      <p>Valves, sensors, injectors, nozzles and minor parts. We work with our own suppliers in China to supply distributors across the region.</p>
+      <a href="contacto.html" class="btn btn-white">Contact us</a>
+    </div>
+    <div class="lang-block lang-zh">
+      <p class="hero-eyebrow">进出口业务</p>
+      <h1>柴油喷射零件</h1>
+      <p>阀门、传感器、喷油器、喷嘴及小型零件。我们与中国的自有供应商合作，为整个地区的经销商供货。</p>
+      <a href="contacto.html" class="btn btn-white">联系我们</a>
+    </div>
   </section>
 
-    <!-- Sección Marcas -->
-    <section id="marcas">
-  <div class="lang-es">
-    <h2>Marcas</h2>
-    <p>Trabajamos todas las marcas del mercado.</p>
-  </div>
-  <div class="lang-pt">
-    <h2>Marcas</h2>
-    <p>Trabalhamos com todas as marcas do mercado.</p>
-  </div>
-  <div class="lang-en">
-    <h2>Brands</h2>
-    <p>We work with all brands on the market.</p>
-  </div>
-  <div class="lang-zh">
-    <h2>品牌</h2>
-    <p>我们经营市场上的所有品牌。</p>
-  </div>
-  <div class="marcas-grid">
-    <img src="bosch.png" alt="Bosch">
-    <img src="denso.png" alt="Denso">
-    <img src="delphi.png" alt="Delphi">
-    <img src="zexel.png" alt="Zexel">
-    <img src="continental.png" alt="Continental">
-    <img src="kingstar.png" alt="Kingstar">
-  </div>
-</section>
-
-    <section class="image-divider">
-    <img src="Bomba-presion.png" alt="Bomba presión">
-    <img src="Inyector.png" alt="Inyector">
-    <img src="Probador-inyectores.png" alt="Probador de inyectores">
-    <img src="Sensor.png" alt="Sensor">
-    <img src="Tobera.png" alt="Tobera">
-    <img src="Bomba-presion.png" alt="Bomba presión">
-    <img src="Inyector.png" alt="Inyector">
-    <img src="Probador-inyectores.png" alt="Probador de inyectores" class="hide-mobile">
-    <img src="Sensor.png" alt="Sensor" class="hide-mobile">
-    <img src="Tobera.png" alt="Tobera" class="hide-mobile">
+  <section class="block" style="background:var(--green-light);">
+    <div class="section-header reveal">
+      <div class="lang-block lang-es active">
+        <h2>Marcas con las que trabajamos</h2>
+      </div>
+      <div class="lang-block lang-pt">
+        <h2>Marcas com as quais trabalhamos</h2>
+      </div>
+      <div class="lang-block lang-en">
+        <h2>Brands we work with</h2>
+      </div>
+      <div class="lang-block lang-zh">
+        <h2>合作品牌</h2>
+      </div>
+    </div>
+    <div class="marquee full-bleed">
+      <div class="marquee-track">
+        <img src="assets/bosch.png" alt="Bosch">
+        <img src="assets/denso.png" alt="Denso">
+        <img src="assets/delphi.png" alt="Delphi">
+        <img src="assets/zexel.png" alt="Zexel">
+        <img src="assets/continental.png" alt="Continental">
+        <img src="assets/kingstar.png" alt="Kingstar">
+      </div>
+    </div>
   </section>
 
-   <!-- Sección Contacto -->
-<section id="contacto" class="contacto-dos-columnas">
-  <!-- Español -->
-  <div class="lang-es">
-    <h2>Contacto</h2>
-    <div class="contacto-wrapper">
-      <div class="contact-info">
-        <p>Gustavo A Galbusera</p>
-        <p><img src="email.png" alt="Email" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
-        <p><img src="whatsapp.png" alt="Whatsapp" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-        <p><img src="facebook.png" alt="Facebook" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
-        <p><img src="instagram.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
-        <p><img src="linkedin.png" alt="Linkedin" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+  <section class="block">
+      <div class="lang-block lang-es active">
+        <h2>Categorías</h2>
+        <p>Trabajamos con estas líneas de producto, listas para consulta directa.</p>
       </div>
-      <div class="contact-form">
-        <h3 class="contact-form-title"></h3>
-        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo electrónico" required>
-          <input type="tel" name="telefono" placeholder="Teléfono" required>
-          <textarea name="mensaje" placeholder="Consulta" rows="5" required></textarea>
-          <button type="submit">Enviar consulta</button>
-        </form>
-        <div class="success-message" style="display: none;">¡Mensaje enviado con éxito!</div>
-        <div class="error-message" style="display: none;">Hubo un error. Intentalo de nuevo.</div>
+      <div class="lang-block lang-pt">
+        <h2>Categorias</h2>
+        <p>Trabalhamos com estas linhas de produto, prontas para consulta direta.</p>
       </div>
+      <div class="lang-block lang-en">
+        <h2>Categories</h2>
+        <p>We work with these product lines, ready for direct inquiry.</p>
+      </div>
+      <div class="lang-block lang-zh">
+        <h2>产品分类</h2>
+        <p>我们经营以下产品线，可直接咨询。</p>
+      </div>
+    </div>
+
+    <div class="category-grid reveal-stagger">
+      <div class="category-card">
+        <div class="icon-wrap"><img src="assets/valvulas.png" alt="Válvulas"></div>
+        <h3 class="lang-block lang-es active">Válvulas</h3>
+        <h3 class="lang-block lang-pt">Válvulas</h3>
+        <h3 class="lang-block lang-en">Valves</h3>
+        <h3 class="lang-block lang-zh">阀门</h3>
+      </div>
+      <div class="category-card">
+        <div class="icon-wrap"><img src="assets/Sensor.png" alt="Sensores"></div>
+        <h3 class="lang-block lang-es active">Sensores</h3>
+        <h3 class="lang-block lang-pt">Sensores</h3>
+        <h3 class="lang-block lang-en">Sensors</h3>
+        <h3 class="lang-block lang-zh">传感器</h3>
+      </div>
+      <div class="category-card">
+        <div class="icon-wrap"><img src="assets/Inyector.png" alt="Inyectores"></div>
+        <h3 class="lang-block lang-es active">Inyectores</h3>
+        <h3 class="lang-block lang-pt">Injetores</h3>
+        <h3 class="lang-block lang-en">Injectors</h3>
+        <h3 class="lang-block lang-zh">喷油器</h3>
+      </div>
+      <div class="category-card">
+        <div class="icon-wrap"><img src="assets/Tobera.png" alt="Toberas"></div>
+        <h3 class="lang-block lang-es active">Toberas</h3>
+        <h3 class="lang-block lang-pt">Bicos</h3>
+        <h3 class="lang-block lang-en">Nozzles</h3>
+        <h3 class="lang-block lang-zh">喷嘴</h3>
+      </div>
+      <a href="contacto.html" class="category-card category-card-more">
+        <div class="icon-wrap"><svg viewBox="0 0 100 100" width="44" height="44" fill="none" stroke="currentColor" stroke-width="7"><line x1="50" y1="20" x2="50" y2="80"/><line x1="20" y1="50" x2="80" y2="50"/></svg></div>
+        <h3 class="lang-block lang-es active">Más categorías a pedido</h3>
+        <h3 class="lang-block lang-pt">Mais categorias sob consulta</h3>
+        <h3 class="lang-block lang-en">More categories on request</h3>
+        <h3 class="lang-block lang-zh">更多品类可询价</h3>
+      </a>
+    </div>
+  </section>
+
+  <div class="intl-strip reveal">
+    <div class="lang-block lang-es active">
+      <h2>Presencia internacional</h2>
+      <p>Importamos desde China y participamos de ferias del rubro en Europa y Latinoamérica.</p>
+    </div>
+    <div class="lang-block lang-pt">
+      <h2>Presença internacional</h2>
+      <p>Importamos da China e participamos de feiras do setor na Europa e na América Latina.</p>
+    </div>
+    <div class="lang-block lang-en">
+      <h2>International presence</h2>
+      <p>We import from China and take part in industry trade fairs in Europe and Latin America.</p>
+    </div>
+    <div class="lang-block lang-zh">
+      <h2>国际业务</h2>
+      <p>我们从中国进口，并参加欧洲和拉丁美洲的行业展会。</p>
     </div>
   </div>
 
-  <!-- Portugués -->
-  <div class="lang-pt">
-    <h2>Contato</h2>
-    <div class="contacto-wrapper">
-      <div class="contact-info">
-        <p>Gustavo A Galbusera</p>
-        <p><img src="email.png" alt="Email" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
-        <p><img src="whatsapp.png" alt="Whatsapp" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-        <p><img src="facebook.png" alt="Facebook" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
-        <p><img src="instagram.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
-        <p><img src="linkedin.png" alt="Linkedin" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top-row">
+        <img src="assets/logo.svg" alt="Dieselpack Argentina" class="footer-logo">
+        <p class="footer-meta">© 2026 Dieselpack Argentina</p>
+        <div class="footer-social">
+          <a href="https://wa.me/5491133304537" target="_blank" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.4.1.2 1.6 2.5 4 3.4.6.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.3-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-3.5H13V7.4c0-1 .3-1.7 1.8-1.7H17V2.5C16.6 2.4 15.4 2.3 14 2.3c-2.9 0-4.9 1.8-4.9 5v2.2H6v3.5h3v9z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4zM8.5 8h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.1 0 4.9 2.7 4.9 6.2V23h-4v-6.8c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V23h-4z"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="contact-form">
-        <h3 class="contact-form-title"></h3>
-        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
-          <input type="text" name="nombre" placeholder="Nome" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="telefono" placeholder="Telefone" required>
-          <textarea name="mensaje" placeholder="Mensagem" rows="5" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-        <div class="success-message" style="display: none;">Mensagem enviada com sucesso!</div>
-        <div class="error-message" style="display: none;">Ocorreu um erro. Tente novamente.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Inglés -->
-  <div class="lang-en">
-    <h2>Contact</h2>
-    <div class="contacto-wrapper">
-      <div class="contact-info">
-        <p>Gustavo A Galbusera</p>
-        <p><img src="email.png" alt="Email" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
-        <p><img src="whatsapp.png" alt="Whatsapp" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-        <p><img src="facebook.png" alt="Facebook" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
-        <p><img src="instagram.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
-        <p><img src="linkedin.png" alt="Linkedin" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
-      </div>
-      <div class="contact-form">
-        <h3 class="contact-form-title"></h3>
-        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
-          <input type="text" name="nombre" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="telefono" placeholder="Phone" required>
-          <textarea name="mensaje" placeholder="Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div class="success-message" style="display: none;">Message sent successfully!</div>
-        <div class="error-message" style="display: none;">There was an error. Please try again.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Chino -->
-  <div class="lang-zh">
-    <h2>联系方式</h2>
-    <div class="contacto-wrapper">
-      <div class="contact-info">
-        <p>Gustavo A Galbusera</p>
-        <p><img src="email.png" alt="Email" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="mailto:galbuserag@dieselpack.com">galbuserag@dieselpack.com</a></p>
-        <p><img src="whatsapp.png" alt="Whatsapp" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://wa.me/5491133304537" target="_blank">+54 9 11 3330-4537</a></p>
-        <p><img src="facebook.png" alt="Facebook" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.facebook.com/dieselpack/?locale=es_LA" target="_blank">Dieselpack Argentina</a></p>
-        <p><img src="instagram.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.instagram.com/dieselpackargentina/?igsh=bHVsdnU1NTBoZm9v#" target="_blank">Gustavo Galbusera</a></p>
-        <p><img src="linkedin.png" alt="Linkedin" style="width: 20px; vertical-align: middle; margin-right: 5px;"> <a href="https://www.linkedin.com/in/gustavo-galbusera-984b5756/" target="_blank">Gustavo Galbusera</a></p>
-      </div>
-      <div class="contact-form">
-        <h3 class="contact-form-title"></h3>
-        <form id="contactForm" action="https://formspree.io/f/xdkgnlrg" method="POST">
-          <input type="text" name="nombre" placeholder="姓名" required>
-          <input type="email" name="email" placeholder="电子邮件" required>
-          <input type="tel" name="telefono" placeholder="电话" required>
-          <textarea name="mensaje" placeholder="留言内容" rows="5" required></textarea>
-          <button type="submit">发送</button>
-        </form>
-        <div class="success-message" style="display: none;">消息已成功发送！</div>
-        <div class="error-message" style="display: none;">发生错误，请重试。</div>
-      </div>
-    </div>
-  </div>
-</section>
-
- <footer>
-    <div class="footer-logos">
-      <img src="bosch.png" alt="Bosch">
-      <img src="denso.png" alt="Denso">
-      <img src="delphi.png" alt="Delphi">
-      <img src="zexel.png" alt="Zexel">
-      <img src="continental.png" alt="Continental">
-      <img src="kingstar.png" alt="Kingstar">
-    </div>
-    <div class="marca-agua">
-      <img src="logodweb.ico" alt="Web Design">
-      <p style="font-size: 0.75em;">© Pablo Ballon | Web Design</p>
+      <a class="credit" href="#" onclick="return false;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+        Sitio por Pablo Ballon Web Design
+      </a>
     </div>
   </footer>
 
-  <script>
-    function changeLang(lang) {
-      const langs = ['es', 'pt', 'en', 'zh'];
-      langs.forEach(l => {
-        document.querySelectorAll('.lang-' + l).forEach(el => {
-          el.style.display = (l === lang) ? 'block' : 'none';
-        });
-      });
-    }
-    window.onload = () => changeLang('es');
+  <a class="float-whatsapp" href="https://wa.me/5491133304537" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .9.9-2.9-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.4.1.2 1.6 2.5 4 3.4.6.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.3-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+  </a>
+  <button class="back-to-top" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const forms = document.querySelectorAll("form#contactForm");
-      forms.forEach(form => {
-        form.addEventListener("submit", async function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = form.getAttribute("action");
-
-          const parent = form.closest(".lang-es, .lang-pt, .lang-en, .lang-zh");
-          parent.querySelector(".success-message").style.display = "none";
-          parent.querySelector(".error-message").style.display = "none";
-
-          try {
-            const response = await fetch(action, {
-              method: "POST",
-              body: data,
-              headers: { Accept: "application/json" },
-            });
-
-            if (response.ok) {
-              form.style.transition = "opacity 0.5s ease-out";
-              form.style.opacity = 0;
-              setTimeout(() => {
-                form.style.display = "none";
-                parent.querySelector(".success-message").style.display = "block";
-              }, 500);
-            } else {
-              parent.querySelector(".error-message").style.display = "block";
-            }
-          } catch (error) {
-            parent.querySelector(".error-message").style.display = "block";
-          }
-        });
-      });
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
-</html>
 </html>
